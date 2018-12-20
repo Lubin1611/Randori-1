@@ -7,7 +7,7 @@
  */
 
 
-$tab = [1, -4, 7, 12];
+$tab = [1, -4, 7, 12, 0.8];
 
    function calcTab ($tab) {
 
@@ -15,7 +15,7 @@ $tab = [1, -4, 7, 12];
 
        foreach ($tab as $toto) {
 
-           if ($toto > 0) {
+           if ($toto > 0 and is_int($toto)) {
 
                $compteur += $toto;
 
